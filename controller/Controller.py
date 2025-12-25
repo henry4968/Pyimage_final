@@ -21,11 +21,11 @@ class ALPRController:
 
         # plate 模型路徑
         self.plate_model_path = os.path.join(
-            PROJECT_DIR, "dataset", "detect", "train4", "weights", "best.pt"
+            PROJECT_DIR, "runs", "detect", "train4", "weights", "best.pt"
         )
 
         # input / output
-        self.input_dir = os.path.join(PROJECT_DIR, "test_images")
+        self.input_dir = os.path.join(PROJECT_DIR, "Dataset", "test_images")
         self.plate_output_dir = os.path.join(PROJECT_DIR, "output", "plates")
         self.final_output_dir = os.path.join(PROJECT_DIR, "output", "final")
 
